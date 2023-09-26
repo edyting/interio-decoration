@@ -10,12 +10,15 @@ import Ourteams from './component/ourteams/Ourteams'
 import Contact from './component/contact/Contact'
 import Portfolio from './component/portfolio/Portfolio'
 import Portfoliodetails from './component/portfoliodetails/Portfoliodetails'
+import Navbar from './component/Navbar';
+import Footer from './component/Footer';
+
 
 function App() {
   return (
     <div className="App">
        <Router>
-
+              <Navbar/>
           <Switch>
               <Route exact path='/'>
                 <Home/>
@@ -45,6 +48,8 @@ function App() {
                 <Portfoliodetails/>
               </Route>
           </Switch>
+
+          <Footer/>
        </Router>
     </div>
   );
