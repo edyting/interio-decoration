@@ -30,7 +30,7 @@ const Lastsection = () => {
                             </div>
                             {/* button */}
                             <div className="btn">
-                                <button className="capitalize bg-white text-grayscale p-2 border-lightgray shadow border">
+                                <button className="capitalize hover:scale-[1.05] hover:border-grayscale bg-white text-grayscale p-2 border-lightgray shadow border">
                                     see materials
                                 </button>
                             </div>

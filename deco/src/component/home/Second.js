@@ -38,9 +38,9 @@ const Second = () => {
                 <p className='text-sm pr-16 leading-[1.2rem] text-grayscale'>
                 Online learning with us does not interfere with your daily life. because learning can be done anytime and anywhere.
                 </p>
-                <div className="btn text-white bg-primaryblue text-center p-2 w-2/5 mt-8">
+                <div className="btn text-white bg-primaryblue text-center p-2 w-2/5 mt-8 hover:scale-[1.06]">
 
-                    <Link to='/About'>
+                    <Link to='/About' className=''>
                     Learn More
                     </Link>
                 </div>

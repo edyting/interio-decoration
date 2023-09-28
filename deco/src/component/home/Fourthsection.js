@@ -30,7 +30,7 @@ const Fourthsection = () => {
                 {/* lists */}
                 <div className="lists  mb-12 w-full">
                     {/* list-item */}
-                    <div className="list-container w-full p-2 mt-12 pr-16">
+                    <div className="list-container w-full p-2 mt-12 pr-16 hover:shadow">
                         <div className="top flex  justify-between">
                             <div className="left w-[35%] flex  justify-between">
                                 <h2 className="text-2xl">01</h2>
@@ -52,7 +52,7 @@ const Fourthsection = () => {
                     {/* list-item-end */}
 
                     {/* list-item */}
-                    <div className="list-container w-full p-2 mt-12 pr-16">
+                    <div className="list-container w-full p-2 mt-12 pr-16 hover:shadow">
                         <div className="top flex  justify-between">
                             <div className="left w-[35%] flex  justify-between">
                                 <h2 className="text-2xl">02</h2>
@@ -73,7 +73,7 @@ const Fourthsection = () => {
                     </div>  
                     {/* list-item-end */}
                     {/* list-item */}
-                    <div className="list-container w-full p-2 mt-12 pr-16">
+                    <div className="list-container w-full p-2 mt-12 pr-16 hover:shadow">
                         <div className="top flex  justify-between">
                             <div className="left w-[35%] flex  justify-between">
                                 <h2 className="text-2xl">03</h2>
@@ -95,7 +95,7 @@ const Fourthsection = () => {
                     {/* list-item-end */}
 
                     {/* list-item */}
-                    <div className="list-container w-full p-2 mt-12 pr-16">
+                    <div className="list-container w-full p-2 mt-12 pr-16 hover:shadow">
                         <div className="top flex  justify-between">
                             <div className="left w-[35%] flex  justify-between">
                                 <h2 className="text-2xl">04</h2>
@@ -117,7 +117,7 @@ const Fourthsection = () => {
                     {/* list-item-end */}
 
                     {/* list-item */}
-                    <div className="list-container w-full p-2 mt-12 pr-16">
+                    <div className="list-container w-full p-2 mt-12 pr-16 hover:shadow">
                         <div className="top flex  justify-between">
                             <div className="left w-[35%] flex  justify-between">
                                 <h2 className="text-2xl">05</h2>

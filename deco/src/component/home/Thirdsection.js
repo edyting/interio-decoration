@@ -29,7 +29,7 @@ const Thirdsection = () => {
                 {/* links */}
                 <div className="links w-full h-[15.5rem] bg-white">
                         {/* link-item */}
-                        <div className="link-container flex justify-between py-10 text-xl capitalize items-center">
+                        <div className="link-container flex justify-between py-10 text-xl capitalize items-center ">
                            <div className="left w-[45%] flex space-x-32 items-center">
                                  <div className="num">
                                      <h2>01</h2>
