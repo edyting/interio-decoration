@@ -1,7 +1,16 @@
+import Fourthsection from "./Fourthsection";
+import Lastsection from "./Lastsection";
+import Second from "./Second";
+import Thirdsection from "./Thirdsection";
+import Topsection from "./Topsection";
 const Home = () => {
     return ( 
         <div className="">
-            <h2>Home</h2>
+            <Topsection/>
+            <Second/>
+            <Thirdsection/>
+            <Fourthsection/>
+            <Lastsection/>
         </div>
      );
 }
