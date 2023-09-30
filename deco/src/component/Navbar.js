@@ -10,8 +10,8 @@ const Navbar = () => {
             setDrop((drop=>!drop))
         }
 
-        let image= !drop?menu:close;
-        let display=(image === close) ?'hide':'show';
+        let image= drop?menu:close;
+        let display=(image === close) ?'flex':'hidden';
 
     return ( 
         <div className="pt-4">
@@ -24,12 +24,12 @@ const Navbar = () => {
                     {/* link items */}
                     <div className="links md:flex md:justify-between  md:items-center md:static absolute right-0 top-12 md:space-x-5 md:w-[40rem] ">
 
-                    <div className="relative mb-8">
+                    <div className=" relative mb-8">
                     <div className="btn md:hidden absolute right-10"><img src={image} alt="" onClick={handleClick} className='' /></div>
                     </div>
 
 
-                        <div className={`link-items md:flex mr-5 md:mr-0  w-[10rem] md:w-auto bg-white md:bg-transparent shadow md:shadow-none space-y-3 md:space-y-0 md:static md:justify-between md:items-center md:space-x-6 text-xl z-10 ${display}      md:opacity-100 block`}>
+                        <div className={`link-items md:flex mr-5 md:mr-0  w-[10rem] md:w-auto bg-white md:bg-transparent shadow md:shadow-none space-y-3 md:space-y-0 md:static md:justify-between md:items-center md:space-x-6 text-xl z-10 ${display}      md:opacity-100 block flex-col md:flex-row `}>
                            
                             <div className="capitalize text-grayscale md:text-xl ">
                             <Link className='focus:text-black  hover:text-black hover:underline hover:underline-offset-4 ' to='/'>Home</Link>
