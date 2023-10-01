@@ -14,9 +14,9 @@ const Navbar = () => {
         let display=(image === close) ?'flex':'hidden';
 
     return ( 
-        <div className="pt-4">
-            <nav className="md:w-full   md:h-[8rem] relative md:px-24 md:static">
-                <div className="container flex justify-between items-center relative md:static">
+        <div className="pt-4 mb:20 relative ">
+            <nav className="md:w-full   md:h-[8rem] md:px-24  md:z-10 ">
+                <div className="container w-full flex justif-between items-center relative pb:20 md:fixed space-x-[33rem] z-50">
                     {/* logo */}
                     <div className="logo w-[10rem]">
                         <img src={logo} alt="" />

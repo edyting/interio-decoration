@@ -2,7 +2,62 @@ import arrow from '../../WebImages/image (7).png'
 
 import room from '../../WebImages/roomwithredchair.jpg'
 
+import {gsap,Power3} from 'gsap'
+import {useRef,useEffect} from 'react'
+import CSSRulePlugin from 'gsap/CSSRulePlugin';
+
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
 const Thirdsection = () => {
+
+    gsap.registerPlugin(ScrollTrigger);
+    let imgrevealsec=CSSRulePlugin.getRule(".img-home:after");
+    let tl=gsap.timeline();
+    let headerline=useRef(null);
+    let imageselfsec=useRef(null);
+   
+    let paragraphsec=useRef(null);
+
+    let once =true;
+
+    useEffect(()=>{
+        if(once){
+            once=false;
+            tl.from(headerline.current,{
+                y:'80px',
+                opacity:0,
+                duration:1,
+                scrollTrigger:{
+                    trigger:headerline.current,
+                    start:'top 85%',
+                    end:'top 50%',
+                    scrub:1,
+                }
+            }).to(imgrevealsec,1,{width:'0%',ease:Power3.easeOut,
+            scrollTrigger:{
+                        trigger:headerline.current,
+                        start:'top 50%',
+                        scrub:1,
+                    }
+            }).from(imageselfsec.current,1,{
+                scale:1.2,
+                scrollTrigger:{
+                    trigger:headerline.current,
+                    start:'top 60%',
+                    scrub:1,
+                }
+            }).from(paragraphsec.current,1.2,{scale:0.1,opacity:0.1,
+                scrollTrigger:{
+                    trigger:headerline.current,
+                    start:'top 60%',
+                    end:'top 35%',
+                    scrub:1,
+                }  })
+        
+                }
+            },[]);
+
+
     return (  <div className=" w-screen md:px-28 px-4 md:h-[50rem] my-12">
         <div className="container bg-white w-[80
             %] h-full relative">
@@ -16,11 +71,11 @@ const Thirdsection = () => {
                 </div>
                 {/* head */}
                 <div className="w-full md:text-4xl text-3xl my-5 md:my-10">
-                    <h2>Attractive furniture with the best quality.</h2>
+                    <h2 ref={headerline}>Attractive furniture with the best quality.</h2>
                 </div>
                 {/* paragraph */}
                 <div className="text-container">
-                    <div className=" text-sm leading-6 text-grayscale md:tracking-[1px]">
+                    <div className=" text-sm leading-6 text-grayscale md:tracking-[1px]" ref={paragraphsec}>
                         <p>Customize your interior design into a dream place</p>
                         <p>with the best designers and quality furniture.We try</p>
                         <p>our best to fulfill your expectations.</p>
@@ -80,9 +135,11 @@ const Thirdsection = () => {
             </div>
             {/* image */}
             <div className="img-container md:w-[1076px] md:h-[524.55px]  md:absolute md:right-0 md:bottom-0">
-                <div className="img-container w-full h-full">
-                    <img src={room} alt="" className='w-full md:h-full h-[11rem] ' />
+               
+                <div className="img-container w-full h-full img-home overflow-hidden relative">
+                    <img ref={imageselfsec} src={room} alt="" className='w-full md:h-full h-[11rem] ' />
                 </div>
+
             </div>
         </div>
     </div> );
