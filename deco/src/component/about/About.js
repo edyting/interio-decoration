@@ -1,7 +1,11 @@
+import Secondabout from "./Secondabout";
+import Topsection from "./Topsection";
+
 const About = () => {
     return ( 
         <div className="">
-            About Us
+            <Topsection/>
+            <Secondabout/>
         </div>
      );
 }

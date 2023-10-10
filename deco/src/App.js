@@ -10,7 +10,7 @@ import Ourteams from './component/ourteams/Ourteams'
 import Contact from './component/contact/Contact'
 import Portfolio from './component/portfolio/Portfolio'
 import Portfoliodetails from './component/portfoliodetails/Portfoliodetails'
-import Navbar from './component/Navbar';
+import Navbarnew from './component/Navbarnew';
 import Footer from './component/Footer';
 
 
@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="App w-screen">
        <Router>
-              <Navbar/>
+              <Navbarnew/>
           <Switch>
               <Route exact path='/'>
                 <Home/>
