@@ -1,4 +1,4 @@
-import image from '../../WebImages/groupatdesk.jpg'
+import image from '../../WebImages/hands.jpg'
 
 
 const Upper = () => {
@@ -7,7 +7,7 @@ const Upper = () => {
             <div className="container w-[80%] mx-auto text-center mb-12 ">
                 {/* header */}
                  <div className="title pb-5">
-                    <h1 className="md:text-6xl text-3xl font-bold">About</h1>
+                    <h1 className="md:text-6xl text-3xl font-bold">Our Teams</h1>
                  </div>
                  {/* paragraph */}
                  <div className="text md:text-xl hidden md:flex flex-col text-grayscale mb-5">
