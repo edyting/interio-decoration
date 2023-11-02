@@ -102,7 +102,7 @@ const Secondabout = () => {
 
             <div className="bottom mt-5 flex flex-col md:flex-row md:h-[600px] w-full space-x-3">
                 
-                <div className=" md:w-[80%] overflow-hidden relative img-homepage bg-red-400">
+                <div className=" md:w-[80%] overflow-hidden relative img-homepage ">
                    <div className="">
                    <img className='w-full' src={image} alt="" ref={imageself} />
                    </div>

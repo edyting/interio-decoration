@@ -1,4 +1,5 @@
 import Secondabout from "./Secondabout";
+import Service from "./Service";
 import Topsection from "./Topsection";
 
 const About = () => {
@@ -6,6 +7,7 @@ const About = () => {
         <div className="">
             <Topsection/>
             <Secondabout/>
+            <Service/>
         </div>
      );
 }
