@@ -1,7 +1,9 @@
+import Upper from "./Upper";
+
 const Ourteams = () => {
     return ( 
         <div className="">
-            <h2>Ourteams</h2>
+            <Upper/>
         </div>
      );
 }

@@ -1,7 +1,11 @@
+import Products from "./Products";
+import Topsection from "./Topsection";
+
 const Services = () => {
     return ( 
         <div className="">
-            <h2>Services</h2>
+            <Topsection/>
+            <Products/>
         </div>
      );
 }
