@@ -40,7 +40,7 @@ const Navbarnew = () => {
                     <NavLink exact to={link.to} className="navlinks   underline-offset-4 text-grayscale hover:text-semigray"> {link.name}</NavLink> 
                 </li>))}
                 <Button>
-                    get started
+                    <NavLink to='/contact'> Contact Us </NavLink>
                  </Button>
             </ul>
         </div>

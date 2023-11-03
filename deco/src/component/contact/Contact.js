@@ -1,7 +1,9 @@
+import Upper from "./Upper";
+
 const Contact = () => {
     return ( 
         <div className="">
-            Contact Us
+            <Upper/>
         </div>
      );
 }
