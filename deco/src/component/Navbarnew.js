@@ -36,11 +36,13 @@ const Navbarnew = () => {
             {/* link items */}
             <ul className={`md:flex items-center capitalize text-xl md:pb-0 pb-6 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${show? 'top-24':'top-[-460px]'} md:opacity-100 opacity-95`}>
                 {links.map(link=>( 
-                <li key={link.id} className='md:ml-8 active:text-semigray active:underline md:my-0 my-4'> 
-                    <NavLink exact to={link.to} className="navlinks   underline-offset-4 text-grayscale hover:text-semigray"> {link.name}</NavLink> 
+                <li key={link.id} className='md:ml-8 active:text-semigray active:underline md:my-0 my-4' onClick={()=>{Setshow
+                    (!show)}}> 
+                    <NavLink exact to={link.to} className="navlinks   underline-offset-4 text-grayscale hover:text-semigray" > {link.name}</NavLink> 
                 </li>))}
-                <Button>
-                    <NavLink to='/contact'> Contact Us </NavLink>
+                <Button >
+                    <NavLink onClick={()=>{Setshow
+                (!show)}} to='/contact'> Contact Us </NavLink>
                  </Button>
             </ul>
         </div>
